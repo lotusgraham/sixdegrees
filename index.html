@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Spotify API</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="app-title text-center">Spotifry My Brain</h1>
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 input-field text-center">
+            <form id="artistSearchForm">
+                <input type="text" id="query" name="searchField"/>
+                <input type="submit" name="searchField" class="btn btn-primary" id="btn">
+            </form>
+        </div>
+    </div>
+    <div class="col-sm-8 instructions col-sm-offset-2">
+        <h2>If your brain is too fried to find new music, or maybe not fried enough (skip the acid), we’ve created an app that will help you discover new artists. Enter one of your favorite musicians and three related artists will pop up. You can click the artist name to be directed to a youtube video that will play automatically. Or, you can click on the least related artist image to display that artist’s three related artists, and so forth.<h2>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 mainArtist text-center"></div>
+    </div>
+    <div id="resultsSection">
+        <!-- <div class="row">
+            <div class="col-sm-4 col-sm-offset-4 mainArtist text-center"></div>
+        </div> -->
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-8 relatedArtist1 text-center"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4 relatedArtist2 text-center"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 relatedArtist3 text-center"></div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
